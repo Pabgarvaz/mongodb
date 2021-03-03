@@ -29,8 +29,7 @@ output = commands.getstatusoutput(cmd)
 cmd = "hive -S -e 'SELECT * FROM log4jLogs WHERE t4 = \"[ERROR]\";'"
 print ("Ejecutando "+cmd)
 output = commands.getstatusoutput(cmd)
-if status == 0:
-	print (output)
-else:
-	print ("error")
+print (output)
+
+print ("error")
 
